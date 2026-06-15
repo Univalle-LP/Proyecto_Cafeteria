@@ -1,9 +1,10 @@
-class UserController {}
-
-module.exports = UserController;
 class UserController {
     registerUser() {
         console.log("Registrando usuario");
+    }
+
+    loginUser() {
+        console.log("Iniciando sesion");
     }
 }
 
