@@ -12,3 +12,10 @@ CREATE TABLE Productos (
     precio DECIMAL(10,2) NOT NULL,
     stock INTEGER DEFAULT 0
 );
+CREATE TABLE Pedidos (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    usuario_id INTEGER,
+    fecha DATETIME DEFAULT CURRENT_TIMESTAMP,
+    estado VARCHAR(30),
+    total DECIMAL(10,2)
+);
