@@ -5,3 +5,10 @@ CREATE TABLE Usuarios (
     password VARCHAR(255) NOT NULL,
     rol VARCHAR(20) DEFAULT 'cliente'
 );
+CREATE TABLE Productos (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nombre VARCHAR(100) NOT NULL,
+    descripcion TEXT,
+    precio DECIMAL(10,2) NOT NULL,
+    stock INTEGER DEFAULT 0
+);
