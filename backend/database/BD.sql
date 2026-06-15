@@ -19,3 +19,10 @@ CREATE TABLE Pedidos (
     estado VARCHAR(30),
     total DECIMAL(10,2)
 );
+CREATE TABLE Detalle_Pedidos (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    pedido_id INTEGER,
+    producto_id INTEGER,
+    cantidad INTEGER,
+    subtotal DECIMAL(10,2)
+);
