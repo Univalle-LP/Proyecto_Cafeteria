@@ -1,3 +1,4 @@
-router.post('/register', (req,res)=>{
-    res.send('Registro de usuario');
-});
+const express = require('express');
+const router = express.Router();
+
+module.exports = router;
